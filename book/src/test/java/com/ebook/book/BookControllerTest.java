@@ -131,7 +131,7 @@ public class BookControllerTest {
     }
 
     @Test
-    public void getFeesTest() throws Exception {
+    public void getBooksTest() throws Exception {
 
         Book book = new Book();
         book.setId(1);

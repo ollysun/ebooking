@@ -1,5 +1,6 @@
 package com.ebook.book;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -32,6 +33,7 @@ public class Book{
     @PastOrPresent(message = "Please enter Date not later than today")
     @Column(nullable = false)
     @ApiModelProperty(notes = "The published date of the Book", required = true)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+1")
     private Date published;
 
     @ApiModelProperty(notes = "The description notes", required = false)

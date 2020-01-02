@@ -34,7 +34,7 @@ export class CreateBookComponent implements OnInit {
     if (this.createBookForm.invalid) {
       return;
     }
-   // this.save();
+    this.save();
   }
 
   save() {

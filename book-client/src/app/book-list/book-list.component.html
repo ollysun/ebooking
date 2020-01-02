@@ -7,10 +7,9 @@
 <mat-card>
   <mat-card-title>Book List</mat-card-title>
   <mat-card-content>
-    {{diagnosticg}}
     <div *ngIf="books.length; else noRecord" class="example-container mat-elevation-z8">
 
-      <table mat-table #table *ngFor="let book of books" [dataSource]="books" matSort>
+      <table mat-table #table  [dataSource]="books" matSort>
   
         <!--- Note that these columns can be defined in any order.
               The actual rendered columns are set as a property on the row definition" -->
